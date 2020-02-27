@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 @font-face {
     font-family: 'Le murmure';
-    src: local('Le murmure Regular'), local('Le-murmure-Regular'),
+    src: 
         url('../LeMurmure-Fonts/LeMurmure-Regular.woff2') format('woff2'),
         url('../LeMurmure-Fonts/LeMurmure-Regular.woff') format('woff'),
         url('../LeMurmure-Fonts/LeMurmure-Regular.ttf') format('truetype');

@@ -2,9 +2,9 @@
 @font-face {
     font-family: 'Le murmure';
     src: local('Le murmure Regular'), local('Le-murmure-Regular'),
-        url('LeMurmure-Regular.woff2') format('woff2'),
-        url('LeMurmure-Regular.woff') format('woff'),
-        url('LeMurmure-Regular.ttf') format('truetype');
+        url(https://anabenitezduarte.github.io/soap-lake-lava-lamp/LeMurmure-Fonts/'LeMurmure-Regular.woff2') format('woff2'),
+        url(https://anabenitezduarte.github.io/soap-lake-lava-lamp/LeMurmure-Fonts/'LeMurmure-Regular.woff') format('woff'),
+        url(https://anabenitezduarte.github.io/soap-lake-lava-lamp/LeMurmure-Fonts/'LeMurmure-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
@@ -12,7 +12,7 @@
   .lamp-diagram{
   	position: absolute;
     color: black;
-    top: 20px;
+    top: 13px;
   	width: 20%;
   	height: 20%;
   	left: 40%;
@@ -30,8 +30,8 @@
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-top: -70px;
+    margin-bottom: -50px;
 
   }
 
@@ -102,24 +102,103 @@
   	color: white;
   }
 
+  .marquee {
+    position: fixed;
+    background-color: 0, 0, 0, 0;
+    width: 100vw;
+    max-width: 80%;
+    height: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: -.5em;
+
+  }
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 30s linear infinite;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: aktiv-grotesk, sans-serif;
+    font-size: 15px;
+    font-weight: regular;
+    text-transform: uppercase;
+    word-spacing: 30px;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
 h1{
   font-family:aktiv-grotesk, sans-serif;
-  font-size:40px;
-  font-weight: 700;
+  font-size:50px;
+  font-weight: bold;
   text-transform: uppercase;
-  margin:0;
+  margin-top: -20px;
 }
-.one {
 
+hr {
+  margin-top: 1em;
+  border-top: 1px solid black;
+  margin-bottom: 1em;
+}
+
+hr.new1{
+  border-top: 1px solid black;
+  margin-top: 21em;
+
+}
+
+hr.new2{
+  border-top: 1px solid black;
+  margin-top: 4em;
+}
+
+.one {
+  font-family:aktiv-grotesk, sans-serif;
+  font-size:15px;
+  font-weight: regular;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
 }
 
 .two{
-
+  font-family:aktiv-grotesk, sans-serif;
+  font-size:15px;
+  font-weight: regular;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: -15px;
 }
 
 .three{
-
+  font-family: 'Le murmure';
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 80px;
 }
+
+
+.four{
+  font-family: 'Le murmure';
+  font-weight: 400;
+  font-style: normal;
+  margin-top: -330px;
+  text-align: right;
+}
+
+.date-preview:hover {color: #ffc124}
+.three:hover {color: #ffc124}
+.sola:hover {color: #ffc124}
 
 pre{
   font-family: aktiv-grotesk, sans-serif;
@@ -242,6 +321,7 @@ img{
       .font-small-mono{
       font-family:aktiv-grotesk, sans-serif;
       font-size:13px;
+      font-weight: 500;
       text-transform: uppercase;
       letter-spacing:initial;
       margin-top:0.67em 0;
@@ -326,8 +406,8 @@ img{
               }
 
                 h1,h2,h3,p{
-                  margin:0;
-                  font-weight:normal}
+                  /* margin:0; */
+                  }
 
               p{margin-bottom:1em}
 
@@ -427,34 +507,49 @@ img{
                               }
 
                               @media screen and (max-width: 767px){
-                                .container.is-active .container--inner{width:100%}}
+                                .container.is-active .container--inner{
+                                  width:100%}
+                                }
                               @media screen and (max-width: 767px){.menu-open .container{height:calc((100% - 40px) / 6);padding-bottom:1px;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}}
                               .container .container--inner{-webkit-transition:background-color .5s ease;transition:background-color .5s ease;background-color:#fff;height:100%;width:calc(100vw - 156px)}
                               @media screen and (max-width: 767px){
                                 .container .container--inner{width:100%}}
                                 .is-inverted .container .container--inner{
-                                  background:#000}.container.is-player .container--inner{display:-webkit-box;display:flex;background-color:transparent}
-                                  .container.is-player.is-active .container--inner{
-                                    width:100%;background-color:transparent
-                                    }.scroll-content{
-                                      position:relative;
-                                      height:inherit}
-                                  @media screen and (max-width: 767px){.scroll-content{display:none}}
-                                  @media screen and (max-width: 767px){.is-active .scroll-content{display:block}
-                                  .menu-open .is-active .scroll-content{display:none}}
-                                  .content{padding:20px 30px;pointer-events:none;
-                                    -webkit-transition:padding .5s ease, opacity .25s ease;
-                                    transition:padding .5s ease, opacity .25s ease}
-                                    .is-active .content{pointer-events:initial}
-                                  @media screen and (max-width: 767px){.content{padding:15px}}
-                                  .panel-preview{
-                                    position:absolute;
-                                    left:5px;
-                                    text-align:center;
-                                    padding-top:23px;
-                                    z-index:100;
-                                    -webkit-transition:left .5s ease;
-                                    transition:left .5s ease}
+                                  background:#000}
+                            .container.is-player .container--inner{display:-webkit-box;display:flex;background-color:transparent}
+                            .container.is-player.is-active .container--inner{
+                                    width:100%;
+                                    background-color:transparent;
+                                    }
+                            .scroll-content{
+                            position:absolute;
+                            height: inherit;
+                                    }
+                          @media screen and (max-width: 767px){
+                        .scroll-content{display:none}}
+                    @media screen and (max-width: 767px){.is-active .scroll-content{display:block}
+                    .menu-open .is-active .scroll-content{
+                      display:none}
+                    }
+                  .content{
+                    padding:20px 30px;
+                    pointer-events:none;
+                    -webkit-transition:padding .5s ease, opacity .25s ease;
+                    transition:padding .5s ease, opacity .25s ease}
+                    .is-active .content{
+                      pointer-events:initial;
+                    }
+                    @media screen and (max-width: 767px){
+                    .content{padding:15px}}
+                    .panel-preview{
+                    position:absolute;
+                    left:5px;
+                    text-align:center;
+                    padding-top:23px;
+                    z-index:100;
+                    -webkit-transition:left .5s ease;
+                    transition:left .5s ease
+                  }
                                     .is-player .panel-preview{left:5px;right:auto}
                                     .is-active .panel-preview{left:-30px}
                                   @media screen and (max-width: 767px){

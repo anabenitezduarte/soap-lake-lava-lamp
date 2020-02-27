@@ -125,10 +125,6 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-.six {
-  grid-column: 2 / 6;
-  grid-row: 4;
-}
 
 .track {
   position: absolute;

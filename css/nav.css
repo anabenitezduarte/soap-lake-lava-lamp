@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 @font-face {
     font-family: 'Le murmure';
-    src: 
+    src:
         url('../LeMurmure-Fonts/LeMurmure-Regular.woff2') format('woff2'),
         url('../LeMurmure-Fonts/LeMurmure-Regular.woff') format('woff'),
         url('../LeMurmure-Fonts/LeMurmure-Regular.ttf') format('truetype');
@@ -20,9 +20,10 @@
 
   .vid{
   	position: fixed;
-  	top: 0;
-  	min-width: 100%;
-  	min-height: 100%;
+  	margin-top: 7em;
+    margin-left: 2em;
+  	min-width: 60%;
+  	min-height: 60%;
   }
 
   .switch {
@@ -129,12 +130,31 @@
     font-size: 15px;
     font-weight: regular;
     text-transform: uppercase;
-    word-spacing: 30px;
   }
 
   @keyframes marquee {
     from { transform: translateX(-50%); }
     to { transform: translateX(0); }
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 60px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
 h1{
@@ -198,10 +218,67 @@ hr.new2{
 
 .para1 {
   font-family:aktiv-grotesk, sans-serif;
-  font-size:10px;
+  font-size: 14px;
   font-weight: regular;
+  text-align: left;
+  width: 50%;
+  word-spacing: normal;
+  text-transform: none;
+  line-height: 17px;
+  margin-top: 15px;
+  margin-left: 30px;
 }
 
+.para2 {
+  display: grid;
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  text-align: left;
+  width: 60%;
+  height: 80%;
+  word-spacing: normal;
+  text-transform: none;
+  line-height: 17px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.head3{
+  display: grid;
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  width: 50vw;
+  word-spacing: normal;
+  text-transform: uppercase;
+  line-height: 17px;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.para3 {
+  display: grid;
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  text-align: left;
+  width: 50vw;
+  word-spacing: normal;
+  text-transform: none;
+  line-height: 17px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.faq-grid{
+  
+}
+
+br{
+  line-height: 25px;
+}
 .date-preview:hover {color: #ffc124}
 .three:hover {color: #ffc124}
 .sola:hover {color: #ffc124}
@@ -319,7 +396,12 @@ img{
       font-weight: bold;
       text-transform: uppercase;}}
 
-      .font-medium{font-size:4vw;line-height:1.1}
+      .font-medium{
+        font-size:4vw;
+        line-height:1.1;
+        word-spacing: normal;
+        letter-spacing: 2px;
+      }
       .font-medium p{margin-bottom:1.1em}
 
       @media screen and (max-width: 767px){
@@ -560,7 +642,7 @@ img{
                     .panel-preview{
                     position:absolute;
                     left:5px;
-                    text-align:center;
+
                     padding-top:23px;
                     z-index:100;
                     -webkit-transition:left .5s ease;
@@ -600,6 +682,8 @@ img{
                                   -webkit-transform-origin:top left;
                                   transform-origin:top left;
                                   white-space:nowrap;
+                                  font-size: 15px;
                                   margin-left:18px;
-                                  width:30px
+                                  width:30px;
+
                                 }

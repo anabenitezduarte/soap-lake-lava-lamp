@@ -18,6 +18,16 @@
   	left: 40%;
   }
 
+  .lamp{
+  	position: relative;
+    color: black;
+    top: 13px;
+  	width: 37%;
+  	height: 37%;
+  	left: 66%;
+    margin-top: -530px;
+  }
+
   .vid{
   	position: fixed;
   	margin-top: 7em;
@@ -122,7 +132,7 @@
     animation: marquee 30s linear infinite;
   }
 
-  .content {
+  .marquee-content {
     margin: 0;
     padding: 0;
     color: black;
@@ -130,6 +140,8 @@
     font-size: 15px;
     font-weight: regular;
     text-transform: uppercase;
+    margin-top: 1em;
+    word-spacing: 10px;
   }
 
   @keyframes marquee {
@@ -145,7 +157,8 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    left: 60px;
+    margin-top: 10px;
+    left: 70px;
     background-color: #f9f9f9;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -159,10 +172,10 @@
 
 h1{
   font-family:aktiv-grotesk, sans-serif;
-  font-size:50px;
+  font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 hr {
@@ -173,7 +186,7 @@ hr {
 
 hr.new1{
   border-top: 1px solid black;
-  margin-top: 21em;
+  margin-top: 25em;
 
 }
 
@@ -203,8 +216,9 @@ hr.new2{
 .three{
   font-family: 'Le murmure';
   font-weight: 400;
+  font-size: 200px;
   font-style: normal;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 
@@ -212,8 +226,9 @@ hr.new2{
   font-family: 'Le murmure';
   font-weight: 400;
   font-style: normal;
-  margin-top: -330px;
+  margin-top: -400px;
   text-align: right;
+  letter-spacing: 1px;
 }
 
 .para1 {
@@ -235,13 +250,14 @@ hr.new2{
   font-size: 14px;
   font-weight: regular;
   text-align: left;
-  width: 60%;
+  width: 55%;
   height: 80%;
   word-spacing: normal;
   text-transform: none;
   line-height: 17px;
   margin-top: 15px;
   margin-left: 30px;
+  overflow: scroll;
 }
 
 .head3{
@@ -250,7 +266,7 @@ hr.new2{
   font-size: 14px;
   font-weight: bold;
   text-align: left;
-  width: 50vw;
+  width: 100vw;
   word-spacing: normal;
   text-transform: uppercase;
   margin-top: 15px;
@@ -270,12 +286,72 @@ hr.new2{
   line-height: 17px;
   margin-top: 15px;
   margin-left: 20px;
+
+}
+
+h6{
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  width: 55%;
+  height: 80%;
+  word-spacing: normal;
+  text-transform: uppercase;
+  line-height: 17px;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+.para5 {
+  display: grid;
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  text-align: left;
+  word-spacing: normal;
+  text-transform: none;
+  line-height: 17px;
+  margin-top: -39em;
+  margin-left: 30px;
+  overflow: scroll;
+}
+
+h5{
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  width: 55%;
+  height: 80%;
+  word-spacing: normal;
+  text-transform: uppercase;
+  line-height: 17px;
+  margin-top: -155px;
+  margin-left: 20em;
+}
+
+.para6 {
+  display: grid;
+  font-family:aktiv-grotesk, sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  text-align: left;
+  word-spacing: normal;
+  text-transform: none;
+  line-height: 17px;
+  margin-top: -39em;
+  margin-left: 21.5em;
+  overflow: scroll;
 }
 
 .faq-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 5px;
+ padding-bottom: 90px;
 }
 
 br{
@@ -311,9 +387,6 @@ img{
   border-style:none;
 }
 
-  textarea{
-    overflow:auto
-    }
   [type="checkbox"],[type="radio"]{
   box-sizing:border-box;
   padding:0;
@@ -399,6 +472,7 @@ img{
       text-transform: uppercase;}}
 
       .font-medium{
+        color: #eb00f7;
         font-size:4vw;
         line-height:1.1;
         word-spacing: normal;
@@ -603,15 +677,31 @@ img{
                                 }}
 
                               .container.is-active.is-player{
-                                overflow:initial
+                                overflow:initial;
                               }
 
                               @media screen and (max-width: 767px){
                                 .container.is-active .container--inner{
                                   width:100%}
                                 }
-                              @media screen and (max-width: 767px){.menu-open .container{height:calc((100% - 40px) / 6);padding-bottom:1px;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}}
-                              .container .container--inner{-webkit-transition:background-color .5s ease;transition:background-color .5s ease;background-color:#fff;height:100%;width:calc(100vw - 156px)}
+                              @media screen and (max-width: 767px){
+                                .menu-open .container{
+                                  height:calc((100% - 40px) / 6);
+                                  padding-bottom:1px;
+                                  -webkit-touch-callout:none;
+                                  -webkit-user-select:none;
+                                  -moz-user-select:none;
+                                  -ms-user-select:none;
+                                  user-select:none}}
+                              .container .container--inner{
+                                -webkit-transition:background-color .5s ease;
+                                transition:background-color .5s ease;
+                                background-color: white;
+                                height:100vh;
+                                width:calc(100vw - 156px);
+                                overflow: scroll;
+
+                              }
                               @media screen and (max-width: 767px){
                                 .container .container--inner{width:100%}}
                                 .is-inverted .container .container--inner{
@@ -624,6 +714,8 @@ img{
                             .scroll-content{
                             position:absolute;
                             height: inherit;
+                            overflow: scroll;
+
                                     }
                           @media screen and (max-width: 767px){
                         .scroll-content{display:none}}

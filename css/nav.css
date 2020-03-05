@@ -20,18 +20,17 @@
 
   .lamp{
   	position: relative;
-    color: black;
     top: 13px;
-  	width: 37%;
-  	height: 37%;
-  	left: 66%;
-    margin-top: -530px;
+  	width: 42%;
+  	height: 42%;
+  	left: 0;
+    margin-top: -510px;
   }
 
   .vid{
   	position: fixed;
-  	margin-top: 7em;
-    margin-left: 2em;
+  	margin-top: 6.5em;
+    margin-left: 9em;
   	min-width: 60%;
   	min-height: 60%;
   }
@@ -241,7 +240,7 @@ hr.new2{
   text-transform: none;
   line-height: 17px;
   margin-top: 15px;
-  margin-left: 30px;
+  margin-left: 420px;
 }
 
 .para2 {
@@ -357,6 +356,26 @@ h5{
 br{
   line-height: 25px;
 }
+
+.cdlogo{
+  width: 10%;
+}
+.kovach{
+  width: 10%;
+}
+.eide{
+  width: 10%;
+}
+.lasersmith{
+  width: 10%;
+}
+.rvla{
+  width: 10%;
+}
+
+
+
+
 .date-preview:hover {color: #ffc124}
 .three:hover {color: #ffc124}
 .sola:hover {color: #ffc124}
@@ -682,8 +701,9 @@ img{
 
                               @media screen and (max-width: 767px){
                                 .container.is-active .container--inner{
-                                  width:100%}
-                                }
+                                  width:100%;
+                                }}
+
                               @media screen and (max-width: 767px){
                                 .menu-open .container{
                                   height:calc((100% - 40px) / 6);
@@ -696,7 +716,7 @@ img{
                               .container .container--inner{
                                 -webkit-transition:background-color .5s ease;
                                 transition:background-color .5s ease;
-                                background-color: white;
+                                background-color: #efefef;
                                 height:100vh;
                                 width:calc(100vw - 156px);
                                 overflow: scroll;

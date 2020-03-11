@@ -9,20 +9,13 @@
     font-style: normal;
   }
 
-  .logo{
-    width: 15%;
-    height: 15%;
-    margin-top: 0px;
-    margin-bottom: -55px;
-  }
-
   .lamp-diagram{
-    position: relative;
+  	position: absolute;
+    color: black;
     top: 13px;
-  	width: 35%;
-  	height: 35%;
-  	left: 0;
-    margin-top: -20px;
+  	width: 20%;
+  	height: 20%;
+  	left: 40%;
   }
 
   .lamp{
@@ -35,18 +28,11 @@
   }
 
   .vid{
-  	position: absolute;
+  	position: fixed;
   	margin-top: 6.5em;
     margin-left: 9em;
-  	min-width: 72%;
-  	min-height: 72%;
-  }
-
-  .lava-vid {
-  position: sticky;
-   left: 0;
-   width: 50%;
-   height: 50%;
+  	min-width: 60%;
+  	min-height: 60%;
   }
 
   .switch {
@@ -56,6 +42,7 @@
     height: 34px;
     margin-top: -70px;
     margin-bottom: -50px;
+
   }
 
   /* Hide default HTML checkbox */
@@ -133,7 +120,7 @@
     height: 50px;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-top: -1em;
+    margin-top: -.5em;
 
   }
 
@@ -147,7 +134,7 @@
   .marquee-content {
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     font-family: aktiv-grotesk, sans-serif;
     font-size: 15px;
     font-weight: regular;
@@ -184,7 +171,6 @@
 
 h1{
   font-family:aktiv-grotesk, sans-serif;
-  color: white;
   font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
@@ -193,24 +179,23 @@ h1{
 
 hr {
   margin-top: 1em;
-  border-top: 1px solid white;
+  border-top: 1px solid black;
   margin-bottom: 1em;
 }
 
 hr.new1{
-  border-top: 1px solid white;
+  border-top: 1px solid black;
   margin-top: 25em;
 
 }
 
 hr.new2{
-  border-top: 1px solid white;
-  margin-top: 3em;
+  border-top: 1px solid black;
+  margin-top: 4em;
 }
 
 .one {
   font-family:aktiv-grotesk, sans-serif;
-  color: white;
   font-size:15px;
   font-weight: regular;
   text-transform: uppercase;
@@ -220,7 +205,6 @@ hr.new2{
 
 .two{
   font-family:aktiv-grotesk, sans-serif;
-  color: white;
   font-size:15px;
   font-weight: regular;
   text-transform: uppercase;
@@ -230,7 +214,6 @@ hr.new2{
 
 .three{
   font-family: 'Le murmure';
-  color: white;
   font-weight: 400;
   font-size: 200px;
   font-style: normal;
@@ -240,7 +223,6 @@ hr.new2{
 
 .four{
   font-family: 'Le murmure';
-  color: white;
   font-weight: 400;
   font-style: normal;
   margin-top: -400px;
@@ -272,8 +254,8 @@ hr.new2{
   word-spacing: normal;
   text-transform: none;
   line-height: 17px;
-  margin-top: -625px;
-  margin-left: 350px;
+  margin-top: 15px;
+  margin-left: 30px;
   overflow: scroll;
 }
 
@@ -345,7 +327,8 @@ h5{
   height: 80%;
   word-spacing: normal;
   text-transform: uppercase;
-  margin-top: -185px;
+  line-height: 17px;
+  margin-top: -155px;
   margin-left: 20em;
 }
 
@@ -375,39 +358,23 @@ br{
 }
 
 .cdlogo{
-  width: 8%;
-  grid-column: 2/3;
-  padding: 20px;
+  width: 10%;
 }
 .kovach{
   width: 10%;
-  grid-column: 1/2;
-  padding: 20px;
-
 }
 .eide{
-  width: 8%;
-  grid-column: 5/6;
-  padding: 20px;
+  width: 10%;
 }
 .lasersmith{
-  width: 12%;
- grid-column: 4/5;
- padding: 20px;
+  width: 10%;
 }
 .rvla{
-  width: 7%;
-  grid-column: 3/4;
-  padding: 20px;
+  width: 10%;
 }
 
-.logo-grid{
-  margin-top: 220px;
-  margin-left: 20%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 50px;
-  padding-left: 30px;
-}
+
+
 
 .date-preview:hover {color: #ffc124}
 .three:hover {color: #ffc124}
@@ -603,7 +570,6 @@ img{
            left:0;
            right:0;
            padding: 30px;
-
            }
 
          @media screen and (max-width: 767px){
@@ -750,8 +716,7 @@ img{
                               .container .container--inner{
                                 -webkit-transition:background-color .5s ease;
                                 transition:background-color .5s ease;
-
-                                background-color: white;
+                                background-color: #efefef;
                                 height:100vh;
                                 width:calc(100vw - 156px);
                                 overflow: scroll;

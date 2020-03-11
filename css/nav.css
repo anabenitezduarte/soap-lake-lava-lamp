@@ -510,7 +510,7 @@ img{
         .ps__rail-y:hover>.ps__thumb-y,.ps__rail-y:focus>.ps__thumb-y,.ps__rail-y.ps--clicking .ps__thumb-y{
           cursor:pointer
           }
-
+      
       @supports (-ms-overflow-style: none){
         .ps{overflow:auto !important}}
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
@@ -836,3 +836,5 @@ img{
                                   width:30px;
 
                                 }
+
+                  @media only screen and (max-width)
